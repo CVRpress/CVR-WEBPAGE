@@ -4,31 +4,31 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: #050A1F;
-  --foreground: #FFFFFF;
-  --card: #0F204B;
-  --card-foreground: #FFFFFF;
-  --popover: #0A1533;
-  --popover-foreground: #FFFFFF;
-  --primary: #C7B299;
-  --primary-foreground: #050A1F;
-  --secondary: #0F204B;
-  --secondary-foreground: #FFFFFF;
-  --muted: #0A1533;
-  --muted-foreground: #8A9BBF;
-  --accent: #C7B299;
-  --accent-foreground: #050A1F;
+  --background: #FFFFFF;
+  --foreground: #1A1A2E;
+  --card: #F7F8FA;
+  --card-foreground: #1A1A2E;
+  --popover: #FFFFFF;
+  --popover-foreground: #1A1A2E;
+  --primary: #003B7A;
+  --primary-foreground: #FFFFFF;
+  --secondary: #F0F2F5;
+  --secondary-foreground: #1A1A2E;
+  --muted: #F0F2F5;
+  --muted-foreground: #5A6577;
+  --accent: #003B7A;
+  --accent-foreground: #FFFFFF;
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.577 0.245 27.325);
-  --border: #1A2D5A;
-  --input: #1A2D5A;
-  --ring: #C7B299;
-  --radius: 0.375rem;
-  --nexos-midnight: #050A1F;
-  --nexos-sapphire: #0F204B;
-  --nexos-navy: #0A1533;
-  --nexos-bronze: #C7B299;
-  --nexos-slate: #8A9BBF;
+  --border: #D8DCE3;
+  --input: #D8DCE3;
+  --ring: #003B7A;
+  --radius: 0.25rem;
+  --cvr-blue: #003B7A;
+  --cvr-blue-light: #E8EEF5;
+  --cvr-navy: #1A1A2E;
+  --cvr-gray: #5A6577;
+  --cvr-gray-light: #F0F2F5;
 }
 
 @theme inline {
@@ -54,15 +54,15 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
+  --radius-sm: calc(var(--radius) - 2px);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) + 2px);
   --radius-xl: calc(var(--radius) + 4px);
-  --color-nexos-midnight: var(--nexos-midnight);
-  --color-nexos-sapphire: var(--nexos-sapphire);
-  --color-nexos-navy: var(--nexos-navy);
-  --color-nexos-bronze: var(--nexos-bronze);
-  --color-nexos-slate: var(--nexos-slate);
+  --color-cvr-blue: var(--cvr-blue);
+  --color-cvr-blue-light: var(--cvr-blue-light);
+  --color-cvr-navy: var(--cvr-navy);
+  --color-cvr-gray: var(--cvr-gray);
+  --color-cvr-gray-light: var(--cvr-gray-light);
 }
 
 @layer base {
