@@ -1,97 +1,87 @@
-import { Mail, Shield, MessageCircle } from "lucide-react"
-
 export function AfectadosSection() {
   return (
-    <section
-      id="contacto"
-      className="border-t border-nexos-sapphire/40 bg-nexos-midnight px-6 py-20 md:py-24"
-    >
+    <section id="contacto" className="border-b border-[#d1d5db] px-6 py-16 md:py-20">
       <div className="mx-auto max-w-3xl">
-        {/* Title */}
-        <div className="mb-6 flex justify-center">
-          <Shield className="h-8 w-8 text-nexos-bronze" strokeWidth={1.5} />
-        </div>
-        <h2 className="mb-2 text-center font-serif text-2xl font-bold tracking-tight text-foreground md:text-3xl">
-          LLAMAMIENTO A FUENTES
+        <p className="mb-1 text-[10px] font-semibold uppercase tracking-[0.3em] text-[#6b7280]">
+          Seccion IV
+        </p>
+        <h2 className="mb-2 text-xl font-bold uppercase tracking-tight text-[#1a365d] md:text-2xl">
+          Llamamiento a Fuentes
         </h2>
-        <p className="mb-4 text-center font-mono text-xs uppercase tracking-[0.25em] text-nexos-slate/60">
+        <p className="mb-2 text-xs uppercase tracking-[0.2em] text-[#6b7280]">
           (Call for Sources)
         </p>
-        <div className="mx-auto mb-8 h-px w-16 bg-nexos-bronze/40" />
-        <p className="mx-auto mb-12 max-w-2xl text-center text-sm leading-relaxed text-nexos-slate md:text-base">
-          Si posee documentaci&oacute;n interna, contratos, correos electr&oacute;nicos
-          o pruebas sobre el modus operandi y las pr&aacute;cticas de estas
-          entidades, puede aportarlos a esta investigaci&oacute;n de forma
-          estrictamente confidencial. Buscamos hechos documentables.
+        <div className="mb-8 h-px w-full bg-[#d1d5db]" />
+
+        <p className="mb-10 text-sm leading-relaxed text-[#374151] md:text-base">
+          Si posee documentacion interna, contratos, correos electronicos o
+          pruebas sobre el modus operandi y las practicas de estas entidades,
+          puede aportarlos a esta investigacion de forma estrictamente
+          confidencial. Buscamos hechos documentables.
         </p>
 
         {/* Whistleblower box */}
-        <div className="rounded border border-nexos-bronze/20 bg-nexos-sapphire/30 p-8 md:p-12">
-          <h3 className="mb-2 text-center font-mono text-sm font-bold uppercase tracking-[0.2em] text-nexos-bronze">
-            BUZ&Oacute;N DE FILTRACIONES
-          </h3>
-          <p className="mb-10 text-center font-mono text-xs uppercase tracking-[0.2em] text-nexos-slate/50">
+        <div className="border border-[#d1d5db] bg-[#f9fafb] p-8 md:p-10">
+          <p className="mb-1 text-xs font-bold uppercase tracking-[0.2em] text-[#1a365d]">
+            Buzon de Filtraciones
+          </p>
+          <p className="mb-8 text-[10px] uppercase tracking-[0.2em] text-[#6b7280]">
             (Whistleblower Drop)
           </p>
 
           {/* Point 1 */}
-          <div className="mx-auto mb-8 max-w-xl">
-            <p className="mb-1 text-xs font-bold uppercase tracking-[0.15em] text-nexos-bronze">
+          <div className="mb-6">
+            <p className="mb-1 text-[10px] font-bold uppercase tracking-[0.15em] text-[#1a365d]">
               1. Finalidad
             </p>
-            <p className="text-sm leading-relaxed text-nexos-slate">
-              Toda documentaci&oacute;n ser&aacute; verificada y podr&aacute; ser
-              difundida en medios nacionales o internacionales con fines
-              estrictamente period&iacute;sticos y de inter&eacute;s p&uacute;blico
-              (no comerciales).
+            <p className="text-xs leading-relaxed text-[#4b5563] md:text-sm">
+              Toda documentacion sera verificada y podra ser difundida en medios
+              nacionales o internacionales con fines estrictamente periodisticos
+              y de interes publico (no comerciales).
             </p>
           </div>
 
           {/* Point 2 */}
-          <div className="mx-auto mb-10 max-w-xl">
-            <p className="mb-1 text-xs font-bold uppercase tracking-[0.15em] text-nexos-bronze">
+          <div className="mb-8">
+            <p className="mb-1 text-[10px] font-bold uppercase tracking-[0.15em] text-[#1a365d]">
               2. Protocolo de Anonimato
             </p>
-            <p className="mb-3 text-sm leading-relaxed text-nexos-slate">
+            <p className="mb-3 text-xs leading-relaxed text-[#4b5563] md:text-sm">
               Para garantizar su seguridad, cree una cuenta gratuita en{" "}
-              <span className="font-semibold text-foreground">ProtonMail</span>{" "}
-              y escr&iacute;banos desde ella. No necesitamos su nombre real; los
-              documentos hablan por s&iacute; solos.
+              <span className="font-bold text-[#1a365d]">ProtonMail</span> y
+              escribanos desde ella. No necesitamos su nombre real; los
+              documentos hablan por si solos.
             </p>
-            <div className="rounded border border-red-500/30 bg-red-500/5 px-4 py-3 text-center">
-              <p className="text-sm text-red-400">
-                <span className="mr-1.5 font-bold">&#9888;&#65039; NO use equipos ni WiFi de su empresa.</span>
+            <div className="border border-[#d1d5db] bg-white px-4 py-3">
+              <p className="text-xs font-semibold uppercase text-[#374151]">
+                AVISO: No use equipos ni WiFi de su empresa.
               </p>
             </div>
           </div>
 
-          <div className="mx-auto mb-4 h-px w-24 bg-nexos-sapphire/40" />
+          <div className="mb-6 h-px w-full bg-[#d1d5db]" />
 
           {/* Secure channels */}
           <div className="flex flex-col items-center gap-4">
-            {/* ProtonMail */}
-            <a
-              href="mailto:cvr.buzonseguro@proton.me"
-              className="group inline-flex items-center gap-3 rounded border border-nexos-bronze/30 bg-nexos-midnight/50 px-8 py-4 transition-all hover:border-nexos-bronze/60 hover:bg-nexos-midnight/80 hover:shadow-lg hover:shadow-nexos-bronze/10"
-            >
-              <Mail
-                className="h-5 w-5 text-nexos-bronze transition-transform group-hover:scale-110"
-                strokeWidth={1.5}
-              />
-              <span className="font-mono text-base font-bold tracking-wider text-nexos-bronze md:text-lg">
+            <div className="border border-[#d1d5db] bg-white px-6 py-4">
+              <p className="mb-1 text-[10px] font-semibold uppercase tracking-[0.15em] text-[#6b7280]">
+                Canal seguro (ProtonMail)
+              </p>
+              <a
+                href="mailto:cvr.buzonseguro@proton.me"
+                className="text-sm font-bold text-[#1a365d] underline underline-offset-2 md:text-base"
+              >
                 cvr.buzonseguro@proton.me
-              </span>
-            </a>
+              </a>
+            </div>
 
-            {/* Signal -- placeholder */}
-            <div className="inline-flex items-center gap-3 rounded border border-nexos-slate/20 bg-nexos-midnight/30 px-8 py-4 opacity-60">
-              <MessageCircle
-                className="h-5 w-5 text-nexos-slate/50"
-                strokeWidth={1.5}
-              />
-              <span className="font-mono text-base tracking-wider text-nexos-slate/50 md:text-lg">
-                Signal: pr&oacute;ximamente
-              </span>
+            <div className="border border-[#d1d5db] bg-white px-6 py-4 opacity-50">
+              <p className="mb-1 text-[10px] font-semibold uppercase tracking-[0.15em] text-[#6b7280]">
+                Canal seguro (Signal)
+              </p>
+              <p className="text-sm text-[#6b7280]">
+                Proximamente
+              </p>
             </div>
           </div>
         </div>

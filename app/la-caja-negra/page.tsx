@@ -17,11 +17,13 @@ export default function LaCajaNegraPage() {
   return (
     <main>
       <Header />
-      <CajaNegraHero />
-      <CajaNegraOrigin />
-      <CajaNegraInvestigations />
-      <CajaNegraPrecedentes />
-      <AfectadosSection />
+      <div className="bg-white text-[#1a365d]" style={{ fontFamily: "var(--font-dossier)" }}>
+        <CajaNegraHero />
+        <CajaNegraOrigin />
+        <CajaNegraInvestigations />
+        <CajaNegraPrecedentes />
+        <AfectadosSection />
+      </div>
       <Footer />
     </main>
   )

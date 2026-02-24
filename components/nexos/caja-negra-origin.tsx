@@ -1,57 +1,52 @@
-import { BookOpen } from "lucide-react"
-
 export function CajaNegraOrigin() {
   return (
-    <section className="border-t border-nexos-sapphire/40 bg-nexos-sapphire px-6 py-24 md:py-32">
+    <section className="border-b border-[#d1d5db] px-6 py-16 md:py-20">
       <div className="mx-auto max-w-3xl">
-        <div className="mb-6 flex justify-center">
-          <BookOpen
-            className="h-8 w-8 text-nexos-bronze"
-            strokeWidth={1.5}
-          />
-        </div>
-        <h2 className="mb-6 text-center font-serif text-2xl font-bold tracking-tight text-foreground md:text-3xl">
-          EL PROYECTO LA CAJA NEGRA
+        <p className="mb-1 text-[10px] font-semibold uppercase tracking-[0.3em] text-[#6b7280]">
+          Seccion I
+        </p>
+        <h2 className="mb-2 text-xl font-bold uppercase tracking-tight text-[#1a365d] md:text-2xl">
+          El Proyecto La Caja Negra
         </h2>
-        <div className="mx-auto mb-12 h-px w-16 bg-nexos-bronze/40" />
+        <div className="mb-8 h-px w-full bg-[#d1d5db]" />
 
-        <div className="space-y-6 text-base leading-relaxed text-nexos-slate md:text-lg">
+        <div className="space-y-5 text-sm leading-relaxed text-[#374151] md:text-base">
           <p>
             La Caja Negra es el proyecto insignia de CVR y nace de una
-            experiencia directa y cercana con las pr&aacute;cticas del sector de
-            la inversi&oacute;n inmobiliaria privada en Espa&ntilde;a.
+            experiencia directa y cercana con las practicas del sector de la
+            inversion inmobiliaria privada en Espana.
           </p>
           <p>
-            Lo que comenz&oacute; como el seguimiento detallado de un caso
-            concreto termin&oacute; revelando un patr&oacute;n sist&eacute;mico
-            mucho m&aacute;s amplio: empresas que captan capital de inversores
-            particulares con promesas de altas rentabilidades mientras operan en
-            una zona gris regulatoria, utilizando veh&iacute;culos societarios
-            de capital m&iacute;nimo y estrategias agresivas sobre activos
-            ocupados o{" "}
+            Lo que comenzo como el seguimiento detallado de un caso concreto
+            termino revelando un patron sistemico mucho mas amplio: empresas que
+            captan capital de inversores particulares con promesas de altas
+            rentabilidades mientras operan en una zona gris regulatoria,
+            utilizando vehiculos societarios de capital minimo y estrategias
+            agresivas sobre activos ocupados o{" "}
             <span className="italic">distressed</span>.
           </p>
           <p>
-            La Caja Negra surge precisamente de esa constataci&oacute;n. No es
-            la historia de un solo inmueble ni de una sola familia. Es un
-            proyecto de periodismo de investigaci&oacute;n dedicado a
-            documentar, verificar y sacar a la luz c&oacute;mo funcionan
-            realmente estos modelos de negocio: qui&eacute;n pone el dinero,
-            qu&eacute; riesgos se ocultan a los inversores y qu&eacute; precio
-            pagan las personas que se encuentran en medio del proceso.
+            La Caja Negra surge precisamente de esa constatacion. No es la
+            historia de un solo inmueble ni de una sola familia. Es un proyecto
+            de periodismo de investigacion dedicado a documentar, verificar y
+            sacar a la luz como funcionan realmente estos modelos de negocio:
+            quien pone el dinero, que riesgos se ocultan a los inversores y que
+            precio pagan las personas que se encuentran en medio del proceso.
           </p>
           <p>
             Porque cuando las empresas deciden apagar la grabadora y borrar sus
             huellas, alguien tiene que encenderla y preservar la verdad.
           </p>
-          <div className="rounded border border-nexos-bronze/20 bg-nexos-midnight/40 px-6 py-5">
-            <p className="text-sm font-semibold text-foreground md:text-base">
-              <span className="text-nexos-bronze">
-                Misi&oacute;n de La Caja Negra:
-              </span>{" "}
-              Servir como registro permanente e independiente de las
-              pr&aacute;cticas que afectan al inter&eacute;s p&uacute;blico en
-              el sector de la inversi&oacute;n inmobiliaria privada.
+
+          {/* Mission box */}
+          <div className="border border-[#d1d5db] bg-[#f9fafb] px-6 py-5">
+            <p className="text-xs font-semibold uppercase tracking-[0.15em] text-[#6b7280]">
+              Mision de La Caja Negra
+            </p>
+            <p className="mt-2 text-sm leading-relaxed text-[#374151]">
+              Servir como registro permanente e independiente de las practicas
+              que afectan al interes publico en el sector de la inversion
+              inmobiliaria privada.
             </p>
           </div>
         </div>

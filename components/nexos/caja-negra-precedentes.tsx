@@ -1,48 +1,50 @@
-import { Archive } from "lucide-react"
-
 const precedentes = [
   {
+    ref: "PRE-001",
     name: "Housegage Investors & Properties S.L.",
     description:
-      "An\u00e1lisis forense del cese de operaciones tras su inclusi\u00f3n en la lista de entidades no autorizadas de la CNMV (Octubre 2017). El caso se estudia como precedente jurisprudencial de riesgo normativo por operar como plataforma de inversi\u00f3n inmobiliaria participativa sin registro PFP, dejando a sus inversores fuera de la cobertura del FOGAIN. Este modelo sirve como patr\u00f3n para identificar esquemas actuales similares.",
+      "Analisis forense del cese de operaciones tras su inclusion en la lista de entidades no autorizadas de la CNMV (Octubre 2017). El caso se estudia como precedente jurisprudencial de riesgo normativo por operar como plataforma de inversion inmobiliaria participativa sin registro PFP, dejando a sus inversores fuera de la cobertura del FOGAIN. Este modelo sirve como patron para identificar esquemas actuales similares.",
   },
   {
+    ref: "PRE-002",
     name: "Caso Madeira Invest Club (MIC)",
     description:
-      "An\u00e1lisis forense del reciente colapso de la plataforma (Septiembre 2024) tras su inclusi\u00f3n en la lista de entidades no autorizadas de la CNMV. El caso se estudia como el precedente jurisprudencial m\u00e1s grave de riesgo normativo en la captaci\u00f3n de capital para activos tangibles sin registro oficial, culminando en el cese abrupto de operaciones, la desprotecci\u00f3n total de los inversores frente al FOGAIN y la intervenci\u00f3n de la Audiencia Nacional.",
+      "Analisis forense del reciente colapso de la plataforma (Septiembre 2024) tras su inclusion en la lista de entidades no autorizadas de la CNMV. El caso se estudia como el precedente jurisprudencial mas grave de riesgo normativo en la captacion de capital para activos tangibles sin registro oficial, culminando en el cese abrupto de operaciones, la desproteccion total de los inversores frente al FOGAIN y la intervencion de la Audiencia Nacional.",
   },
 ]
 
 export function CajaNegraPrecedentes() {
   return (
-    <section className="border-t border-nexos-sapphire/40 bg-nexos-midnight px-6 py-24 md:py-32">
+    <section className="border-b border-[#d1d5db] bg-[#f9fafb] px-6 py-16 md:py-20">
       <div className="mx-auto max-w-5xl">
-        <div className="mb-8 flex items-center justify-center gap-3">
-          <Archive
-            className="h-6 w-6 text-nexos-slate/50"
-            strokeWidth={1.5}
-          />
-          <h2 className="font-mono text-xs font-semibold uppercase tracking-[0.25em] text-nexos-slate/60">
-            Precedentes Documentados
-          </h2>
-        </div>
-        <div className="mx-auto mb-12 h-px w-16 bg-nexos-slate/20" />
+        <p className="mb-1 text-[10px] font-semibold uppercase tracking-[0.3em] text-[#6b7280]">
+          Seccion III
+        </p>
+        <h2 className="mb-2 text-xl font-bold uppercase tracking-tight text-[#1a365d] md:text-2xl">
+          Precedentes Documentados
+        </h2>
+        <div className="mb-10 h-px w-full bg-[#d1d5db]" />
 
         <div className="grid gap-6 md:grid-cols-2">
-          {precedentes.map((inv) => (
+          {precedentes.map((p) => (
             <article
-              key={inv.name}
-              className="rounded border border-nexos-slate/20 bg-nexos-navy/60 p-8 backdrop-blur-sm"
+              key={p.ref}
+              className="border border-[#d1d5db] bg-white p-6 md:p-8"
             >
-              <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-nexos-slate/50">
-                Precedente Documentado / CNMV
-              </p>
-              <h3 className="mb-4 font-serif text-lg font-bold text-nexos-slate/80 md:text-xl">
-                {inv.name}
+              <div className="mb-3 flex items-baseline justify-between gap-4">
+                <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#6b7280]">
+                  Precedente / CNMV
+                </p>
+                <p className="text-[10px] font-medium tracking-[0.15em] text-[#9ca3af]">
+                  Ref. {p.ref}
+                </p>
+              </div>
+              <h3 className="mb-3 text-sm font-bold uppercase text-[#1a365d] md:text-base">
+                {p.name}
               </h3>
-              <div className="mb-4 h-px w-12 bg-nexos-slate/20" />
-              <p className="text-sm leading-relaxed text-nexos-slate/60">
-                {inv.description}
+              <div className="mb-3 h-px w-10 bg-[#d1d5db]" />
+              <p className="text-xs leading-relaxed text-[#4b5563] md:text-sm">
+                {p.description}
               </p>
             </article>
           ))}
