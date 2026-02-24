@@ -212,7 +212,7 @@ export function Hero() {
       */}
       <div className="pointer-events-none absolute inset-0 z-[2]">
         <Image
-          src="/images/silhouette.jpg"
+          src="/images/f7f5bd49-fa9e-41b2-9c68-b833c3cb831b.jpg"
           alt=""
           fill
           className="object-contain object-center opacity-30 mix-blend-lighten"
