@@ -58,7 +58,7 @@ export function AfectadosSection() {
               y escr&iacute;banos desde ella. No necesitamos su nombre real; los
               documentos hablan por s&iacute; solos.
             </p>
-            <div className="rounded border border-red-500/30 bg-red-500/5 px-4 py-3">
+            <div className="rounded border border-red-500/30 bg-red-500/5 px-4 py-3 text-center">
               <p className="text-sm text-red-400">
                 <span className="mr-1.5 font-bold">&#9888;&#65039; NO use equipos ni WiFi de su empresa.</span>
               </p>
