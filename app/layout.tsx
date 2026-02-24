@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next'
-import { Inter, Merriweather, Courier_Prime } from 'next/font/google'
+import { Inter, Merriweather } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
@@ -12,12 +12,6 @@ const merriweather = Merriweather({
   subsets: ['latin'],
   weight: ['300', '400', '700', '900'],
   variable: '--font-merriweather',
-})
-
-const courierPrime = Courier_Prime({
-  subsets: ['latin'],
-  weight: ['400', '700'],
-  variable: '--font-courier-prime',
 })
 
 export const metadata: Metadata = {
@@ -44,7 +38,7 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-  themeColor: '#FFFFFF',
+  themeColor: '#050A1F',
   width: 'device-width',
   initialScale: 1,
 }
@@ -55,7 +49,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="es" className={`${inter.variable} ${merriweather.variable} ${courierPrime.variable}`}>
+    <html lang="es" className={`${inter.variable} ${merriweather.variable}`}>
       <body className="font-sans antialiased">
         {children}
         <Analytics />
