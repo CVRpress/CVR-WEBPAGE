@@ -35,6 +35,7 @@
   --font-sans: 'Inter', sans-serif;
   --font-serif: 'Merriweather', serif;
   --font-mono: 'Geist Mono', 'Geist Mono Fallback';
+  --font-dossier: 'Courier Prime', 'Courier New', monospace;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
