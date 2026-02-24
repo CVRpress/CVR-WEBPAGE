@@ -214,19 +214,18 @@ export function HomeHero() {
         </h1>
 
         <h2 className="mb-6 font-serif text-xl font-light tracking-wide text-nexos-slate md:text-2xl lg:text-3xl">
-          Camila V&aacute;squez Rogel
+          Criterio &middot; Verificaci&oacute;n &middot; Rigor
         </h2>
 
         <div className="mx-auto mb-8 h-px w-24 bg-nexos-bronze/50" />
 
         <p className="mb-6 text-xs font-semibold uppercase tracking-[0.3em] text-nexos-bronze">
-          Criterio &middot; Verificaci&oacute;n &middot; Rigor
+          ___________________
         </p>
 
         <p className="mx-auto mb-10 max-w-2xl text-pretty text-base leading-relaxed text-nexos-slate md:text-lg">
-          Laboratorio independiente de periodismo de investigaci&oacute;n.
-          Documentamos hechos, verificamos datos y sacamos a la luz lo que
-          otros prefieren mantener oculto.
+          Periodismo de investigación aplicado al escrutinio corporativo. 
+          Documentación de expedientes técnicos, auditoría de buenas prácticas y fiscalización de varios sectores.
         </p>
 
         <a
